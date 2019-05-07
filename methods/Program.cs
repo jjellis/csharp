@@ -11,23 +11,23 @@ namespace ManyMethods
         static void Main(string[] args)
         {
             // hello method
-            // Hello(); 
+             Hello(); 
             //Addition method
-            //Addition();
+            Addition();
             //CatDog method
-            //CatDog();
+            CatDog();
             //OddEvent method
-            //OddEvent();
+            OddEvent();
             //Inches method
-            //Inches();
+            Inches();
             //Echo method
-            //Echo();
+            Echo();
             //killgrams method
-            //KillGrams();
+            KillGrams();
             //DATE METOD    
-            //Date();
+            Date();
             //Age method
-            //Ages();
+            Ages();
             //guess method
             Guess();
 
@@ -42,7 +42,7 @@ namespace ManyMethods
         public static void Addition()
         {
             Console.WriteLine("Please enter the first number:");
-            int num1 = int.Parse(Console.ReadLine());
+            int num1 = int.Parse(s: Console.ReadLine());
             Console.WriteLine("Please enter the second number:");
             int num2 = int.Parse(Console.ReadLine());
             Console.WriteLine("The sum is " + (num1 + num2));
@@ -116,8 +116,20 @@ namespace ManyMethods
         }
         static void Guess()
         {
+            Console.WriteLine("Guess a word!");
+            String word = Console.ReadLine();
+            if (word == "chsarp")
+            {
+                Console.WriteLine("Correct!!");
+            }
+            else
+            {
+                Console.WriteLine("Wrong!!");
 
-        }
+            }
+            Console.Read();
+        
+    }
     }
 
 }

@@ -1,0 +1,7 @@
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\bin\Debug\methods.exe.config
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\bin\Debug\methods.exe
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\bin\Debug\methods.pdb
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\obj\Debug\methods.csprojAssemblyReference.cache
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\obj\Debug\methods.csproj.CoreCompileInputs.cache
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\obj\Debug\methods.exe
+C:\Users\jjn42\Documents\DivFolder\csharp\methods\obj\Debug\methods.pdb
