@@ -56,10 +56,14 @@ namespace ManyMethods
             {
                 Console.WriteLine("Meow");
             }
-            else if (animal == "dogs")
+             else if (animal == "dogs")
             {
                 Console.WriteLine("Woof");
 
+            }
+            else
+            {
+                Console.WriteLine("Not dogs or cats.")
             }
             Console.Read();
         }
@@ -80,8 +84,8 @@ namespace ManyMethods
         static void Inches()
         {
             Console.WriteLine("Enter hight in feet");
-            int feet = int.Parse(s: Console.ReadLine());
-            int inches = feet * 12;
+            double feet = double.Parse(s: Console.ReadLine());
+            double inches = feet * 12;
             Console.WriteLine(inches);
             Console.Read();
         }
