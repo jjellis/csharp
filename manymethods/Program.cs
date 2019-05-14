@@ -11,7 +11,7 @@ namespace ManyMethods
         static void Main(string[] args)
         {
             // hello method
-             Hello(); 
+            Hello();
             //Addition method
             Addition();
             //CatDog method
@@ -56,14 +56,14 @@ namespace ManyMethods
             {
                 Console.WriteLine("Meow");
             }
-             else if (animal == "dogs")
+            else if (animal == "dogs")
             {
                 Console.WriteLine("Woof");
 
             }
             else
             {
-                Console.WriteLine("Not dogs or cats.")
+                Console.WriteLine("Not dogs or cats.");
             }
             Console.Read();
         }
@@ -132,9 +132,10 @@ namespace ManyMethods
 
             }
             Console.Read();
-        
-    }
+
+        }
     }
 
 }
+
 
