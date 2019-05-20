@@ -10,7 +10,11 @@ namespace rockpaperscissors
     {
         static void Main(string[] args)
         {
-            
+            int[] score = new int[2];
+            score[0] = score[0];
+            score[1] = score[1];
+            Console.WriteLine("player score " + score[0]);
+            Console.WriteLine("computer score " + score[1]);
 
             string replay = "yes";
             while (replay == "yes") 
