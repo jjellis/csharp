@@ -27,7 +27,7 @@ namespace TICTACTOE
                 Console.WriteLine("Enter Row:");
 
                 row = int.Parse(Console.ReadLine());
-                if(row != 0 && row != 1 && row != 2)
+                while(row != 0 && row != 1 && row != 2)
                 {
                     Console.WriteLine("enter valid number.");
                     Console.WriteLine("Enter Row:");
@@ -35,7 +35,7 @@ namespace TICTACTOE
                 }
                 Console.WriteLine("Enter Column:");
                 col = int.Parse(Console.ReadLine());
-                if(col != 0 && col != 1 && col != 2)
+                while(col != 0 && col != 1 && col != 2)
                 {
                     Console.WriteLine("enter valid number.");
                     Console.WriteLine("Enter Column:");
@@ -68,7 +68,7 @@ namespace TICTACTOE
                 }
             }
 
-            while (play && !CheckForWin() && !CheckForTie());
+            while (!CheckForWin() && !CheckForTie());
             {
                 Console.ReadLine();
 
