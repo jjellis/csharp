@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pocos", "pocos.csproj", "{35DC9EBC-995D-4F64-8102-42E2B364EA3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoCos", "PoCos.csproj", "{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{35DC9EBC-995D-4F64-8102-42E2B364EA3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35DC9EBC-995D-4F64-8102-42E2B364EA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35DC9EBC-995D-4F64-8102-42E2B364EA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35DC9EBC-995D-4F64-8102-42E2B364EA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9EDF9FAB-5389-4022-B564-39FE010A365F}
+		SolutionGuid = {AABB59AE-3D5D-4BAD-9663-E083C34CDC8E}
 	EndGlobalSection
 EndGlobal

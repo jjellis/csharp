@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35DC9EBC-995D-4F64-8102-42E2B364EA3E}</ProjectGuid>
+    <ProjectGuid>{BD10F864-B3C6-4414-92A4-DB3E6EB2FBB2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>pocos</RootNamespace>
-    <AssemblyName>pocos</AssemblyName>
+    <RootNamespace>PoCos</RootNamespace>
+    <AssemblyName>PoCos</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
