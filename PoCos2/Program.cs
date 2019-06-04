@@ -39,13 +39,16 @@ namespace PoCos2
                 string priority = Console.ReadLine().ToLower();
                 Console.WriteLine(toAdd.priority);
                 toAdd.description = description;
+                toAdd.date = date;
+                toAdd.priority = priority;
              
                 
             }
 
             foreach (ToDoItem item in todolist)//idk add things 
-                Console.WriteLine(toAdd.toStr());
+                
             {
+                Console.WriteLine(toAdd.toStr());
             }
 
         }
