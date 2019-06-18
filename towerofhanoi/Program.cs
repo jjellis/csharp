@@ -28,11 +28,12 @@ namespace towersofhanoi
             
 
            
-            while (Wins())
+            while (!Wins())
             {
                      
                 Board();                
                 move();
+                
             }
                         
             Board();
@@ -147,7 +148,7 @@ namespace towersofhanoi
         //win
        public static bool Wins()
         {
-            if (C.Count == size)
+            if (C.Count != size)
                 return true;
             
         }
