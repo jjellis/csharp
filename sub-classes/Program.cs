@@ -10,11 +10,11 @@ namespace sub_classes
         {
             List<Person> identity = new List<Person>();
             Person one = new Person("William", "Bill");
-            identity.Add();
-            one = new SuperHero("Mr Incredible", "super strength", "Wade Turner");
-            identity.Add();
-            one = new Villan("The Joker", "Batman");
-            identity.Add();
+            identity.Add(one);
+            SuperHero two = new SuperHero("Mr Incredible", "super strength", "Wade Turner");
+            identity.Add(two);
+            Villian three = new Villian("The Joker", "Batman");
+            identity.Add(three);
 
             foreach (Person x in identity)
             {
@@ -35,24 +35,21 @@ namespace sub_classes
 
     public class Person
     {
-        public string Name { get; set;  }
-        public string Nickname { get; set;  }
+        public string Name { get; set; }
+        public string Nickname { get; set; }
 
-        public Person(string x, string y)
+        public Person(string name, string nickname)
         {
-            Name = x;
-            Nickname = y;
+            Name = name;
+            Nickname = nickname;
         }
 
-        public virtual string ToString()
+        public virtual string PrintGreeting()
         {
             return $"Hi, my name is {Name}, you can call me {Nickname}.";
         }
 
-        public override string ToString()
-        {
-            return $"{Name}: ";
-        }
+
     }
 
     public class SuperHero : Person
@@ -60,23 +57,30 @@ namespace sub_classes
 
         public string RealName { get; set; }
         public string SuperPower { get; set; }
-        public SuperHero(string name, string realName, string superPower) : base(name, name null);{
-           RealName = realName;
+        public SuperHero(string name, string realName, string superPower) : base(name, null)
+        {
+            RealName = realName;
             SuperPower = superPower;
-        return $"I am {RealName}. When I am {Name}, my super power is {SuperPower}!";
+
         }
         public override string PrintGreeting()
         {
-        return _greeting(); 
+            return $"I am {RealName}. When I am {Name}, my super power is {SuperPower}!";
         }
 
     }
 
     public class Villian : Person
     {
+
         public string Nemesis { get; set; }
-         private string _greetings;
-       
+
+
+        public Villian(string name, string nemesis) : base(name, null)
+        {
+            Nemesis = nemesis;
+        }
+
         public override string PrintGreeting()
         {
             return $"I am the {Name}. Have you seen {Nemesis}?";
@@ -84,3 +88,4 @@ namespace sub_classes
 
     }
 }
+
