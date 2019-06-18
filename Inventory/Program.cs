@@ -20,6 +20,7 @@ namespace Inventory
 
             foreach (IRentable rentable in Rent)
             {
+                Console.WriteLine($"rental type: {rentable.GetType()}");
                 Console.WriteLine(rentable.GetDailyRate());
                 Console.WriteLine(rentable.GetDescription());                
                 
