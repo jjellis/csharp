@@ -14,13 +14,13 @@ namespace CarLot
             List<Vehicle> invetory = new List<Vehicle>();
             CarLot pioner = new CarLot("pioner", invetory);
             CarLot fordcars = new CarLot("fordcars", invetory); 
-            .Add(new Car("tat999", "honda", "liberty", 6000, "coupe", 4));
+            invetory.Add(new Car("tat999", "honda", "liberty", 6000, "coupe", "4"));
             invetory.Add(new Truck("dbd8943", "Ford", "F-150", 20000, "short"));
-            invetory.Add(new Car("FCH938", "hyundai", "sonata", 10000, "Hatchback", 4));            
-            pioner.list(new Car("DBG8D966", "Chevoltet", "Tracker", 9999, "Sedan", 4));
+            invetory.Add(new Car("FCH938", "hyundai", "sonata", 10000, "Hatchback", "4"));            
+            pioner.list(new Car("DBG8D966", "Chevoltet", "Tracker", 9999, "Sedan", "4"));
             pioner.list(new Truck("DBG8D967", "Ford", "F-150", 1000, "Medium"));
-            pioner.list(new Car("DBG8D968", "Toyota", "Camrie", 501, "Hatchback", 1));
-            fordcars.list(new Truck("pne0032", "Ford", "F-250", 20000, "long"))
+            pioner.list(new Car("DBG8D968", "Toyota", "Camrie", 501, "Hatchback", "1"));
+            fordcars.list(new Truck("pne0032", "Ford", "F-250", 20000, "long"));
             fordcars.Print();
             Console.WriteLine("");
             pioner.Print();
