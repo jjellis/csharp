@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace sub_classes
 {
@@ -17,12 +15,7 @@ namespace sub_classes
             identity.Add();
             one = new Villan("The Joker", "Batman");
             identity.Add();
-            Person two = new Person("timothy", "tim");
-            identity.Add();
-            two = new SuperHero("dr strange", " magic", "dr steven strange");
-            identity.Add();
-            two = new Villan("magnito", "professor x");
-            identity.Add();
+
             foreach (Person x in identity)
             {
                 Console.WriteLine($"{x.ToString()}{x.PrintGreeting()}");
@@ -64,12 +57,17 @@ namespace sub_classes
 
     public class SuperHero : Person
     {
-        
+
         public string RealName { get; set; }
         public string SuperPower { get; set; }
+        public SuperHero(string name, string realName, string superPower) : base(name, name null);{
+           RealName = realName;
+            SuperPower = superPower;
+        return $"I am {RealName}. When I am {Name}, my super power is {SuperPower}!";
+        }
         public override string PrintGreeting()
         {
-            return $"I am {RealName}. When I am {Name}, my super power is {SuperPower}!";
+        return _greeting(); 
         }
 
     }
@@ -77,6 +75,8 @@ namespace sub_classes
     public class Villian : Person
     {
         public string Nemesis { get; set; }
+         private string _greetings;
+       
         public override string PrintGreeting()
         {
             return $"I am the {Name}. Have you seen {Nemesis}?";
