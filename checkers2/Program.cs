@@ -19,6 +19,8 @@ namespace Checkers
             ///hint: What function should you call here?
             Game checkers = new Game();
             checkers.Start();
+
+            Console.ReadKey();
         }
        
     }
@@ -275,7 +277,7 @@ namespace Checkers
 
             //2. If there is no checker at the source position
             // notify the user of the error, then stop
-            if(PlayerChecker == null)
+            if (PlayerChecker == null)
             {
                 Console.WriteLine("There is no checker there try again");
                 return;
@@ -284,7 +286,7 @@ namespace Checkers
             //3. If there is a checker at the source position
             // then check if the move from the source position to the destination position
             // is a legal move
-           
+
             // 3.1. 
             // If (this is a legal move)
             // {
@@ -299,24 +301,33 @@ namespace Checkers
             //  {
             //      Notify the user of the error and then stop
             //  }
-            if (IsLegalMove(PlayerChecker.Team, from, to))
-            {
-                board.MoveChecker(PlayerChecker, to);
-                if(IsCapture(from, to))
-                {
-                    Checker Captured = GetCaptureChecker(from, to);
-                    board.RemoveChecker(Captured);
-                }
-            }
             else
             {
-                Console.WriteLine("That is not a legal move. Try again");
-                return;
-            }
-            // Re-draw the board after each move
-            DrawBoard();
+                if (IsLegalMove(PlayerChecker.Team, from, to))
 
+                {
+                    
+                    if (this.IsCapture(from, to))
+                    {
+                        Checker Captured = this.GetCaptureChecker(from, to);
+                        board.RemoveChecker(Captured);
+                    }
+                    board.MoveChecker(PlayerChecker, to);
+                }
+
+                else
+                {
+                    Console.WriteLine("That is not a valid move. Try again");
+                    return;
+                }
+               
+                // Re-draw the board after each move
+               
+
+            }
+            DrawBoard();
         }
+        
 
         public void DrawBoard()
         {
