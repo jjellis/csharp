@@ -27,12 +27,7 @@ namespace sub_classes
 
 
 
-
-
-
-
-
-
+          
     public class Person
     {
         public string Name { get; set; }
