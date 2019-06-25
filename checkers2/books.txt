@@ -1,0 +1,33 @@
+
+c:\sqlite>sqlite3 LCA
+SQLite version 3.28.0 2019-04-16 19:49:53
+Enter ".help" for usage hints.
+
+sqlite> create table books(
+   ...> id int,
+   ...> title varchar(20),
+   ...> author varchar(20)
+   ...> );
+
+sqlite> insert into books(id, title, author) values
+   ...> (1, 'The Hobbit', 'Tolkien');
+sqlite> insert into books(id, title, author) values
+   ...> (2, 'The Cat and the hat', 'Dr.Seuss') ;
+sqlite> insert into books(id, title, author) values
+   ...> (3, 'Tom Sawyer', 'Mark Twain');
+sqlite> select * from books;
+1|The Hobbit|Tolkien
+2|The Cat and the hat|Dr.Seuss
+3|Tom Sawyer|Mark Twain
+sqlite> select * from books where id=3;
+3|Tom Sawyer|Mark Twain
+sqlite> update books set title ='The Cat and The Hat' where id = 2;
+sqlite> select * from books;
+1|The Hobbit|Tolkien
+2|The Cat and The Hat|Dr.Seuss
+3|Tom Sawyer|Mark Twain
+sqlite> delete from books where id=3;
+sqlite> select * from books;
+1|The Hobbit|Tolkien
+2|The Cat and The Hat|Dr.Seuss
+sqlite>
