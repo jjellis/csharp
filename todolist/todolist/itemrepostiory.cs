@@ -11,7 +11,7 @@ namespace todolist
         public itemrepostiory()
         {
             context = new itemcontext();
-            context.Database.EnsureCreated();
+            //contextEnsureCreated();
         }
         //list to do items
         public List<todoitems> GetTodoitems()
@@ -19,10 +19,10 @@ namespace todolist
             IEnumerable<todoitems> list = context.todoitem;
             return list.ToList();
         }
-        public void AddItem(string descrition, string status, DateTime dueDate)
+        public void AddItem(int Id, string Description, string status, DateTime dueDate)
         {
-            todoitems item = new todoitems(descrition, status, dueDate);
-            context.todoitem.Add(item);
+            todoitems item = new todoitems(Id, Description, status);
+            context.todoitems.Add(item);
             context.SaveChanges();
         }
         public void AddItem(todoitems item)
@@ -37,7 +37,7 @@ namespace todolist
             ///                     where item.Id == id
             ///                     select item).FirstOrDefault();
             ///                     
-            oldItem.descrition = newDescrip;
+            oldItem.Description = newDescrip;
             oldItem.Status = newStatus;
             oldItem.DueDate = newDueDate;
             context.Update(oldItem);
