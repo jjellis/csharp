@@ -31,6 +31,40 @@ namespace todolist
                 {
                     List<todoitems> list = repo.AddItem(string Description, string Status);
                     ConsoleUtility.PrintTodoitem(list);
+                    break;
+                }
+                if (action == "3")
+                {
+                    List<todoitems> list = repo.UpdateItem(string Description, string Status);
+                    ConsoleUtility.PrintTodoitem(list);
+                    break;
+
+                }
+                if (action == "4")
+                {
+                    List<todoitems> list = repo.DeleteItem(int Id);
+                    ConsoleUtility.PrintTodoitem(list);
+                    break;
+                }
+                if (action == "6")
+                {
+                    List<todoitems> list = itemrepostiory.AskForinfo(itemstatus);
+                    while(itemstatus !="done")
+                    {ConsoleUtility.PrintTodoitem(list);
+                    break;
+
+                    }
+                    
+                }
+                if (action == "7")
+                {
+                    List<todoitems> list = itemrepostiory.AskForinfo(itemstatus);
+                    while (itemstatus == "done")
+                    {
+                        ConsoleUtility.PrintTodoitem(list);
+                        break;
+
+                    }
                 }
             }
             //

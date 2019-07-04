@@ -72,9 +72,11 @@ namespace todolist
         {
             Console.WriteLine("enter item description");
             string itemdes = Console.ReadLine();
+            Console.WriteLine("enter status");
+            string itemstatus = Console.ReadLine();
             Console.WriteLine("enter item duedate");
             string itemdate = Console.ReadLine();
-            string iteminfo = (itemdes + itemdate);
+            string iteminfo = (itemdes + itemdate + itemstatus);
             return iteminfo;
             
         }
